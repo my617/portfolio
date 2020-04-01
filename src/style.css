@@ -835,16 +835,6 @@ a {
   .top__menu-item {
     padding: 15px 0;
     text-align: justify;
-    transition: .3s;
-  }
-  .top__menu-item::before {
-    content: '>';
-    display: inline-block;
-    color: #fff;
-    padding-right: 10px;
-  }
-  .top__menu-item:hover {
-    opacity: .7;
   }
   .top__menu-link {
     display: inline-block;
