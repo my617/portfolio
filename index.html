@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qupont's portfolio</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/2d40b0efaa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <div id="main">
+
+        <!-- TOP -->
+        <section id="top">
+            <img src="img/bg_img01.png" alt="">
+            <h1 class="top__title">Qupont's portfolio</h1>
+
+            <nav class="top__menu">
+                <ul class="top__menu-items">
+                    <li class="top__menu-item"><a href="index.html" class="top__menu-link">TOP</a></li>
+                    <li class="top__menu-item"><a href="#about" class="top__menu-link">ABOUT</a></li>
+                    <li class="top__menu-item"><a href="#skill" class="top__menu-link">SKILL</a></li>
+                    <li class="top__menu-item"><a href="#works" class="top__menu-link">WORKS</a></li>
+                    <li class="top__menu-item"><a href="#blog" class="top__menu-link">BLOG</a></li>
+                </ul>
+            </nav>
+
+            <button class="top__menu-toggle">
+                <span class="top__menu-botton"></span>
+                <span class="top__menu-botton"></span>
+                <span class="top__menu-botton"></span>
+            </button>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="fadein">
+            <h2 class="section__title">About</h2>
+            <div class="about__items">
+                <div class="about__img">
+                    <img src="img/q_prof.jpg" alt="プロフィール画像" class="about__img-item">
+                </div>
+                <div class="about__item">
+                    <h3 class="about__name">きゅぽん</h3>
+                    <p class="about__text">
+                        1991年生まれ、東京都出身。<br>
+                        大学卒業後、メーカーの事務職として約3年間従事。<br>
+                        退職後、カナダ・トロントにワーキングホリデービザで渡航し、現地でサーバーとして勤務。<br>
+                        帰国後、不動産会社にて経理アシスタントとして入社し、その中でRPAツールに触れて将来を考えた結果IT業界に興味を持つ。<br>
+                        2020年1月よりプログラミング学習を行う。<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILL -->
+        <section id="skill" class="fadein">
+            <h2 class="section__title">Skill</h2>
+            <div class="skill__items">
+                <div class="skill__item">
+                    <i class="fab fa-html5 skill__icon"></i><i class="fab fa-css3-alt skill__icon"></i>
+                    <p class="skill__text">HTML/CSS(Sass)</p>
+                </div>
+                <div class="skill__item">
+                    <i class="fab fa-js skill__icon"></i>
+                    <p class="skill__text">JavaScript(jQuey)</p>
+                </div>
+                <div class="skill__item">
+                    <i class="fab fa-php skill__icon"></i>
+                    <p class="skill__text">PHP/MySQL</p>
+                </div>
+                <div class="skill__item">
+                    <i class="fab fa-wordpress skill__icon"></i>
+                    <p class="skill__text">Wordpress</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKS -->
+        <section id="works" class="fadein">
+            <h2 class="section__title">Works</h2>
+            <div class="works__items">
+                <div class="works__item">
+                    <img src="img/work01.png" alt="Qupont's portfolio" class="works__img01">
+                </div>
+                <div class="works__item">Coming soon...</div>
+                <div class="works__item">Coming soon...</div>
+            </div>
+        </section>
+
+        <!-- WORKS modal -->
+        <section id="modal">
+            <div class="modal">
+            <div class="modal__container">
+                <div class="modal__img">
+                    <img src="img/work01.png" alt="Qupont's portfolio">
+                </div>
+                <div class="modal__items">
+                    <div class="modal__close"></div>
+                    <h3 class="modal__name">Qupont's portfolio</h3>
+                    <dl class="modal__info">
+                        <dd class="modal__label">使用言語</dd>
+                        <dt class="modal__text">HTML/CSS(Sass)/JavaScript(jQuery)</dt>
+                        <dd class="modal__label">概要</dd>
+                        <dt class="modal__text">jQueryを使用し、動きのあるWEBサイトにしました。HTMLをベースに作成後、Wordpress化。</dt>
+                    </dl>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+
+            <div class="fadein">
+            <div class="blog">
+                <h2 class="section__title--white">Blog</h2>
+                <div class="blog__item">Coming soon...</div>
+            </div>
+
+            <div class="sns">
+                <h2 class="section__title--white">Follow me</h2>
+                <ul class="sns__items">
+                    <li class="sns__item"><a href="https://twitter.com/qupont999"><i class="fab fa-twitter-square sns__icon"></i></a></li>
+                    <li class="sns__item"><a href=""><i class="fab fa-github-square sns__icon"></i></a></li>
+                </ul>
+            </div>
+
+            <small class="footer__copyright">&copy; Qupont's portfolio</small>
+
+        </div>
+
+        </section>
+
+    </div>
+
+    <div class="cover"></div>
+
+    <script
+     src="https://code.jquery.com/jquery-3.4.1.js"
+     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+    
+    
+</body>
+</html>
