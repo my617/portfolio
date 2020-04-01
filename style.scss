@@ -271,16 +271,6 @@ a{
             &-item{
                 padding: $space_xxs 0;
                 text-align: justify;
-                transition: .3s;
-                &::before{
-                    content: '>';
-                    display: inline-block;
-                    color: $font-color_sub;
-                    padding-right: $space_3s;
-                }
-                &:hover{
-                    opacity: .7;
-                }
             }
             &-link{
                 display: inline-block;          
