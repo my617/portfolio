@@ -1135,8 +1135,8 @@ a {
 
 /* レスポンシブ */
 @media screen and (max-width: 980px) {
-  .modal {
-    width: 100%;
+  .modal__wrapper {
+    width: 90vw;
     height: auto;
     margin: 0 auto;
     padding: 60px 50px;

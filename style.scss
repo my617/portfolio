@@ -565,10 +565,12 @@ a{
 /* レスポンシブ */
 @include mq(){
     .modal{
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        padding: $space_l $space_m;
+        &__wrapper{
+            width: 90vw;
+            height: auto;
+            margin: 0 auto;
+            padding: $space_l $space_m;
+        }
         &__container{
             display: block;
         }
