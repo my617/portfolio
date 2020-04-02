@@ -622,9 +622,10 @@ a{
 @include mq(sp){
     .modal{
         &__wrapper{
+            width: 100%;
             height: auto;
             margin: 0 auto;
-            padding: $space_l $space_m;
+            padding: $space_m $space_s;
         }
     }
 }

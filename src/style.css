@@ -1190,9 +1190,10 @@ a {
 
 @media screen and (max-width: 560px) {
   .modal__wrapper {
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 60px 50px;
+    padding: 50px 30px;
   }
 }
 
