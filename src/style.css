@@ -803,6 +803,7 @@ a {
 @media screen and (max-width: 980px) {
   #top {
     width: 100%;
+    height: 100vh;
   }
   .top__title {
     text-align: center;
@@ -1140,13 +1141,11 @@ a {
 }
 
 /* レスポンシブ */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 980px) {
   .modal {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    top: 10%;
-    left: -9%;
     padding: 60px 50px;
   }
   .modal__container {
