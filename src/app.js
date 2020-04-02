@@ -28,6 +28,9 @@ $(function (){
         $(this).fadeOut();
         $('.modal').fadeOut();
     });
+    $(window).on('resize', function () {
+        modalResize();
+    });
 
     //スクロール
     $(window).scroll(function () {
