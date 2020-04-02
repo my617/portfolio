@@ -465,15 +465,12 @@ a{
     position: relative;
 }
 .modal{
-    width: 70%;
-    height: 500px;
     background: $bg-btn;
     padding: $space_xl;
-    position: relative;
     display: none;
     position: fixed;
-    bottom: 150px;
-    left: -5%;
+    max-width: 70vw;
+    max-height: 70vh;
     z-index: 1;
     border: $border_modal;
     &__container{
@@ -573,7 +570,7 @@ a{
         margin: 0 auto;
         padding: $space_l $space_m;
         &__container{
-            display: block;;
+            display: block;
         }
         &__img{
             max-width: 250px;

@@ -11,25 +11,34 @@ $(function (){
     });
 
     //モーダル
-    $('.works__img01').on('click', function () {
-        var modalWidth = $('.modal').width();
-        var windowWidth = $(window).width();
-        $('.modal').attr('style', 'margin-left: ' + (windowWidth/2 - modalWidth/2) + 'px');
-        $('.modal').show();
-        $('.cover').show();
-    });
+    $('.works__item').on('click', function () {
+        var modalIndex = $(this).index();
+        $('#modal').eq(modalIndex).fadeIn();
 
-    $('.modal__close').on('click', function () {
-        $('.modal').fadeOut();
-        $('.cover').fadeOut();
-    });
+        //モーダルの位置を中央にする
+        function modalResize() {
+            var windowWidth = $(window).width();
+            var windowHeight = $(window).height();
 
-    $('.cover').on('click', function() {
-        $(this).fadeOut();
-        $('.modal').fadeOut();
-    });
-    $(window).on('resize', function () {
+            var modalWidth = (windowWidth - $(modal).outerWidth(true)) / 2;
+            var modalHeight = (windowHeight - $(modal).outerHeight(true)) / 2;
+
+            $(modal).css({'left': modalWidth + 'px','top': modalHeight + 'px'});
+        }
         modalResize();
+
+        $(modal).fadeIn();
+
+        $('.modal__close, .modal__cover').off().click(function () {
+            $('#modal').fadeOut();
+            $('.modal__cover').fadeOut('slow', function () {
+                $('.modal__cover').remove();
+            });
+        });
+
+        $(window).on('resize', function () {
+            modalResize();
+        });
     });
 
     //スクロール

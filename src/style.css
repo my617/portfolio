@@ -1028,15 +1028,12 @@ a {
 }
 
 .modal {
-  width: 70%;
-  height: 500px;
   background: #fff;
   padding: 70px;
-  position: relative;
   display: none;
   position: fixed;
-  bottom: 150px;
-  left: -5%;
+  max-width: 70vw;
+  max-height: 70vh;
   z-index: 1;
   border: 1px solid #444;
 }
