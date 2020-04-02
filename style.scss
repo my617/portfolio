@@ -461,18 +461,17 @@ a{
 /* ==============
 * modal
 * ==============*/
-#modal{
-    position: relative;
-}
 .modal{
-    background: $bg-btn;
-    padding: $space_xl;
-    display: none;
-    position: fixed;
-    max-width: 70vw;
-    max-height: 70vh;
-    z-index: 1;
-    border: $border_modal;
+    &__wrapper{
+        background: $bg-btn;
+        padding: $space_xl;
+        display: none;
+        position: fixed;
+        max-width: 70vw;
+        max-height: 90vh;
+        z-index: 1;
+        border: $border_modal;
+    }
     &__container{
         display: flex;
     }
@@ -551,16 +550,17 @@ a{
             background: $bg-icon;
         }
     }
+    &__cover{
+        background: rgba(0, 0, 0, .5);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
-.cover{
-    background: rgba(0, 0, 0, .5);
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
+
 
 /* レスポンシブ */
 @include mq(){

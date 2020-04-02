@@ -14,6 +14,7 @@ $(function (){
     $('.works__item').on('click', function () {
         var modalIndex = $(this).index();
         $('#modal').eq(modalIndex).fadeIn();
+        $('.modal__cover').fadeIn();
 
         //モーダルの位置を中央にする
         function modalResize() {
