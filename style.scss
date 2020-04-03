@@ -32,6 +32,7 @@ $font-color_link: #82AED9;
 /* background */
 $bg-footer: linear-gradient(to top, rgba(000, 000, 000, 0.3), rgba(255, 255, 255, 0.8));
 $bg-dark: rgba(000, 000, 000, 0.7);
+$bg-contents: #fff;
 $bg-btn: #fff;
 $bg-title: #ADCDEC;
 $bg-title_dark: #82AED9;
@@ -68,6 +69,24 @@ body{
     @include mq(sp){
         font-size: $font-size_s;
         line-height: 1.5;
+    }
+}
+.body{
+    background-image: url("../img/bg-img.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    &::before{
+        content: '';
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 }
 a{
@@ -110,38 +129,26 @@ a{
         }
     }
 }
+#main{
+    width: 100%;
+    background: #fff;
+}
 
 
 /* ==============
 * TOP
 * ==============*/
 #top{
-    padding-top: $space_xxl;
-    padding-bottom: $space_s;
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/bg-footer.jpeg");
-    background-size: cover;
     width: 100%;
     height: 100vh;
-    //  position: relative;
-    background-attachment: fixed;
-    padding: $space_m 0;
-    // &::before{
-    //     content: '';
-    //     background-color: rgba(0,0,0,0.5);
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     left: 0;
-    //     bottom: 0;
-    // }
+    position: relative;
 }
-
 .top{
     &__title{
-    //     position: absolute;
-    //     top: 40%;
-    //     left: 50%;
-    //     transform: translateY(-40%) translateX(-50%);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-40%) translateX(-50%);
         font-size: $font-size_xxl;
         color: $font-color_sub;
         letter-spacing: 1.5px;
@@ -247,9 +254,9 @@ a{
     .top{
         &__title{
             text-align: center;
-            // top: 40%;
-            // left: 50%;
-            // transform: translateY(-40%) translateX(-50%);
+            top: 40%;
+            left: 50%;
+            transform: translateY(-40%) translateX(-50%);
         }
         &__menu{
             display: block;
@@ -301,6 +308,8 @@ a{
 }
 
 .about{
+    width: 100%;
+    background: #fff;
     &__items{
         display: flex;
         margin: 0 auto;
