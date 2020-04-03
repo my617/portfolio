@@ -1102,7 +1102,6 @@ a {
   display: inline-block;
   position: relative;
   margin: 0 15px 0 10px;
-  padding: 0;
   width: 4px;
   height: 20px;
   position: absolute;
@@ -1126,6 +1125,7 @@ a {
 /* レスポンシブ */
 @media screen and (max-width: 980px) {
   .modal__wrapper {
+    min-width: 400px;
     height: auto;
     margin: 0 auto;
     padding: 60px 50px;
@@ -1190,7 +1190,7 @@ a {
 
 @media screen and (max-width: 560px) {
   .modal__wrapper {
-    width: 100%;
+    min-width: 400px;
     height: auto;
     margin: 0 auto;
     padding: 50px 30px;

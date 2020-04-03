@@ -531,7 +531,6 @@ a{
         display: inline-block;
         position: relative;
         margin: 0 $space_xxs 0 $space_3s;
-        padding: 0;
         width: 4px;
         height: 20px;
         position: absolute;
@@ -557,6 +556,7 @@ a{
 @include mq(){
     .modal{
         &__wrapper{
+            min-width: 400px;
             height: auto;
             margin: 0 auto;
             padding: $space_l $space_m;
@@ -622,7 +622,7 @@ a{
 @include mq(sp){
     .modal{
         &__wrapper{
-            width: 100%;
+            min-width: 400px;
             height: auto;
             margin: 0 auto;
             padding: $space_m $space_s;
