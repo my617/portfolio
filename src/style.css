@@ -811,6 +811,7 @@ a {
     top: 40%;
     left: 50%;
     transform: translateY(-40%) translateX(-50%);
+    padding-top: 74%;
   }
   .top__menu {
     display: block;
@@ -1191,6 +1192,9 @@ a {
     height: auto;
     margin: 0 auto;
     padding: 50px 30px;
+  }
+  .modal__close {
+    padding-top: 20px;
   }
 }
 

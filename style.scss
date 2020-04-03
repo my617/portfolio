@@ -249,6 +249,7 @@ a{
             top: 40%;
             left: 50%;
             transform: translateY(-40%) translateX(-50%);
+            padding-top: 74%;
         }
         &__menu{
             display: block;
@@ -623,6 +624,9 @@ a{
             height: auto;
             margin: 0 auto;
             padding: $space_m $space_s;
+        }
+        &__close{
+            padding-top: $space_xs;
         }
     }
 }
