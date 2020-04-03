@@ -627,6 +627,10 @@ a{
             margin: 0 auto;
             padding: $space_m $space_s;
         }
+        &__close{
+            right: 5px;
+            font-size: $font-size_xl;
+        }
     }
 }
 

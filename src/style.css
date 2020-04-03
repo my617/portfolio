@@ -1195,6 +1195,10 @@ a {
     margin: 0 auto;
     padding: 50px 30px;
   }
+  .modal__close {
+    right: 5px;
+    font-size: 2rem;
+  }
 }
 
 /* ==============
