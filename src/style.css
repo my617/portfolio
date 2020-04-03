@@ -809,7 +809,9 @@ a {
 @media screen and (max-width: 980px) {
   #top {
     width: 100%;
-    height: 700px;
+  }
+  .top__container {
+    width: 100vh;
   }
   .top__title {
     text-align: center;
