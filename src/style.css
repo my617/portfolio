@@ -669,7 +669,7 @@ a {
 #top {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg-img.jpeg") no-repeat;
+  background: url("../img/bg-top.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -805,8 +805,6 @@ a {
   #top {
     width: 100%;
     height: 100vh;
-    padding-top: 60%;
-    background-size: contain;
   }
   .top__title {
     text-align: center;
