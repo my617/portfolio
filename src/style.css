@@ -672,9 +672,8 @@ a {
   background: url("../img/bg-top.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  height: 100vh;
   background-attachment: fixed;
+  padding: 50px 0;
 }
 
 #top::before {
@@ -688,10 +687,6 @@ a {
 }
 
 .top__title {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateY(-40%) translateX(-50%);
   font-size: 4rem;
   color: #fff;
   letter-spacing: 1.5px;
@@ -808,9 +803,6 @@ a {
   }
   .top__title {
     text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translateY(-40%) translateX(-50%);
   }
   .top__menu {
     display: block;

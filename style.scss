@@ -121,9 +121,9 @@ a{
     background: url("../img/bg-top.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    height: 100vh;
+   //  position: relative;
     background-attachment: fixed;
+    padding: $space_m 0;
     &::before{
         content: '';
         background-color: rgba(0,0,0,0.5);
@@ -137,10 +137,10 @@ a{
 
 .top{
     &__title{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translateY(-40%) translateX(-50%);
+    //     position: absolute;
+    //     top: 40%;
+    //     left: 50%;
+    //     transform: translateY(-40%) translateX(-50%);
         font-size: $font-size_xxl;
         color: $font-color_sub;
         letter-spacing: 1.5px;
@@ -246,9 +246,9 @@ a{
     .top{
         &__title{
             text-align: center;
-            top: 40%;
-            left: 50%;
-            transform: translateY(-40%) translateX(-50%);
+            // top: 40%;
+            // left: 50%;
+            // transform: translateY(-40%) translateX(-50%);
         }
         &__menu{
             display: block;
@@ -639,7 +639,6 @@ a{
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/bg-footer.jpeg");
     background-size: cover;
     width: 100%;
-    
 }
 .footer__copyright{
     color: $font-color_sub;
