@@ -807,11 +807,8 @@ a {
 
 /* レスポンシブ */
 @media screen and (max-width: 980px) {
-  #top {
-    width: 100%;
-  }
   .top__container {
-    width: 100vh;
+    height: 100vh;
   }
   .top__title {
     text-align: center;

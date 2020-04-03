@@ -243,12 +243,10 @@ a{
 
 /* レスポンシブ */
 @include mq(){
-    #top{
-        width: 100%;
-    }
+
     .top{
         &__container{
-            width: 100vh;
+            height: 100vh;
         }
         &__title{
             text-align: center;
