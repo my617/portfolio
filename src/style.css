@@ -1100,18 +1100,15 @@ a {
 }
 
 .modal__close {
-  display: inline-block;
-  position: relative;
-  margin: 0 15px 0 10px;
-  width: 4px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  right: 20px;
+  font-size: 0.875rem;
+  text-align: center;
   cursor: pointer;
-  font-size: 3rem;
-  border: none;
-  z-index: 1;
+  padding-top: 50px;
+  transition: .3s;
+}
+
+.modal__close:hover {
+  color: #82AED9;
 }
 
 .modal__cover {
@@ -1196,13 +1193,6 @@ a {
     height: auto;
     margin: 0 auto;
     padding: 50px 30px;
-  }
-  .modal__close {
-    right: 5px;
-    top: -10px;
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
   }
 }
 

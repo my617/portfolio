@@ -27,6 +27,7 @@ $space_3l: 120px;
 /* font-color */
 $font-color_default: #444;
 $font-color_sub: #fff;
+$font-color_link: #82AED9;
 
 /* background */
 $bg-footer: linear-gradient(to top, rgba(000, 000, 000, 0.3), rgba(255, 255, 255, 0.8));
@@ -529,18 +530,14 @@ a{
         padding-bottom: $space_xs;
     }
     &__close{
-        display: inline-block;
-        position: relative;
-        margin: 0 $space_xxs 0 $space_3s;
-        width: 4px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-        right: 20px;
+        font-size: $font-size_s;
+        text-align: center;
         cursor: pointer;
-        font-size: $font-size_icon;
-        border: none;
-        z-index: 1;
+        padding-top: $space_m;
+        transition: .3s;
+        &:hover{
+            color: $font-color_link;
+        }
     }
     &__cover{
         background: rgba(0, 0, 0, .5);
@@ -628,13 +625,6 @@ a{
             height: auto;
             margin: 0 auto;
             padding: $space_m $space_s;
-        }
-        &__close{
-            right: 5px;
-            top: -10px;
-            font-size: $font-size_xl;
-            margin: 0;
-            padding: 0;
         }
     }
 }
