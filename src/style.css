@@ -763,7 +763,7 @@ a {
   }
 }
 
-.top__menu-botton {
+.top__menu-button {
   display: block;
   position: absolute;
   border-radius: 5px;
@@ -776,15 +776,15 @@ a {
   cursor: pointer;
 }
 
-.top__menu-botton:nth-of-type(1) {
+.top__menu-button:nth-of-type(1) {
   top: 0;
 }
 
-.top__menu-botton:nth-of-type(2) {
+.top__menu-button:nth-of-type(2) {
   top: 13px;
 }
 
-.top__menu-botton:nth-of-type(3) {
+.top__menu-button:nth-of-type(3) {
   bottom: 0px;
 }
 
@@ -806,12 +806,13 @@ a {
     width: 100%;
     height: 100vh;
     padding-top: 60%;
+    background-size: contain;
   }
   .top__title {
     text-align: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-40%) translateX(-50%);
   }
   .top__menu {
     display: block;
@@ -1198,6 +1199,7 @@ a {
   }
   .modal__close {
     right: 5px;
+    top: -10px;
     font-size: 2rem;
     margin: 0;
     padding: 0;
