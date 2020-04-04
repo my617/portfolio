@@ -122,15 +122,16 @@ a{
 * ==============*/
 #top{
     width: 100%;
-    height: 100vh;
-    position: relative;
     background-size: cover;
-    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/bg-footer.jpeg");
 }
 .top{
+    &__container{
+        position: relative;
+        height: 100vh;
+    }
     &__title{
         position: absolute;
         top: 40%;
