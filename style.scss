@@ -123,18 +123,18 @@ a{
 #top{
     width: 100%;
     height: 100vh;
+    position: relative;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/bg-footer.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/bg-img.jpeg");
 }
 .top{
-    &__container{
-        display: flex;
-        justify-content: center;
-        align-items: center;   
-    }
     &__title{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-40%), translateX(-50%);
         font-size: $font-size_xxl;
         color: $font-color_sub;
         letter-spacing: 1.5px;
@@ -230,14 +230,9 @@ a{
 /* レスポンシブ */
 @include mq(){
     #top{
-        height: auto;
-        background-image: url("../img/bg-img-res.jpeg");
         background-attachment: scroll;
     }
     .top{
-        &__container{
-            height: 700px;
-        }
         &__title{
             text-align: center;
             top: 40%;
