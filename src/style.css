@@ -807,6 +807,9 @@ a {
 
 /* レスポンシブ */
 @media screen and (max-width: 980px) {
+  #top {
+    height: auto;
+  }
   .top__container {
     height: 100vh;
   }
