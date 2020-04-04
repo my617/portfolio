@@ -243,7 +243,9 @@ a{
 
 /* レスポンシブ */
 @include mq(){
-
+    #top{
+        height: auto;
+    }
     .top{
         &__container{
             height: 100vh;
