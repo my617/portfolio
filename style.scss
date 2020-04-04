@@ -231,6 +231,7 @@ a{
 @include mq(){
     #top{
         height: auto;
+        background-image: url("../img/bg-img-res.jpeg");
     }
     .top{
         &__container{
