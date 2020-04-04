@@ -232,6 +232,7 @@ a{
     #top{
         height: auto;
         background-image: url("../img/bg-img-res.jpeg");
+        background-attachment: scroll;
     }
     .top{
         &__container{
