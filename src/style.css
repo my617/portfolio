@@ -685,7 +685,8 @@ a {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translateY(-40%), translateX(-50%);
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
   font-size: 4rem;
   color: #fff;
   letter-spacing: 1.5px;
@@ -695,6 +696,10 @@ a {
   width: 70%;
   margin: 0 auto;
   z-index: 2;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top__menu-items {
